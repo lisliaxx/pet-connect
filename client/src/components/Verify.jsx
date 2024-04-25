@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Verify() {
     const navigate = useNavigate();
     const token = useAuthToken();
-    const [status, setStatus] = useState('Verifying...'); // Status message for user feedback
+    const [status, setStatus] = useState('Verifying...');
     console.log("Sending token:", token);
 
     useEffect(() => {
