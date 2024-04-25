@@ -1,0 +1,127 @@
+.post-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.post-form div {
+    margin-bottom: 10px;
+}
+
+.post-form label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+.post-form textarea {
+    height: 100px;
+}
+
+.post-form button {
+    padding: 10px 20px;
+    background-color: #ff85c1; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post-form button:hover {
+    background-color: #e15393;
+}
+
+.posts-list {
+    margin-top: 20px;
+}
+
+.post-item {
+    background-color: #f9e6f4; 
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.post-item h3 {
+    color: #d63384;
+}
+
+.post-item p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.post-item button {
+    padding: 5px 10px;
+    background-color: #ff4785; 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post-item button:hover {
+    background-color: #e14075; 
+}
+
+.blog {
+    color: #ff4785;
+    font-size: 33px;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .post-container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .post-form input[type="text"],
+    .post-form textarea {
+        padding: 8px;
+    }
+
+    .post-form button,
+    .post-item button {
+        padding: 8px 16px;
+    }
+
+    .post-item {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-form input[type="text"],
+    .post-form textarea {
+        padding: 6px;
+    }
+
+    .post-form button,
+    .post-item button {
+        font-size: 14px; 
+    }
+}
